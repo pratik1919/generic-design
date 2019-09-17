@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // transition: all 0.25s ease-in-out;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@import "font";
+@import "variable";
+@import "base";
+@import "header";
+@import "content";
+@import "content-wrapper";
+@import "side-menu";
+@import "header";
+@import "card";
+@import "table";
+@import "form";

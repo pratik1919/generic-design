@@ -1,0 +1,13 @@
+.card {
+  padding: 40px;
+  background: $card-background;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  &__title {
+    color: $heading-color;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    text-transform: capitalize;
+    font-size: 1.125rem;
+  }
+}

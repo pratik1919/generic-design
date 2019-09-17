@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title>Admin Template</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.4.95/css/materialdesignicons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="header__top">
+        <div class="header__logo-wrapper">
+            <div class="header__logo"><img src="images/logo.png" alt="kyc logo" /></div>
+            <!-- <div class="header__notice">
+                <p>Some Important Notice here!</p>
+            </div> -->
+        </div>
+        <div class="header__user-details">
+            <ul class="header__notifications">
+                <li><i class="mdi mdi-folder-outline header__notification-icons"></i></li>
+                <li><i class="mdi mdi-bell-outline header__notification-icons"></i></li>
+            </ul>
+            <div class="header__profile-wrapper">
+                <div class="header__profile-image"><img src="images/user.png" alt="profile-image" />
+                </div>
+                <div>
+                    <ul class="header__profile-info">
+                        <li class="header__profile-info--name">Ram Hari Thapa</li>
+                        <li><small>Quick info here!</small></li>
+                    </ul>
+                </div>
+                <i class="mdi mdi-menu-down"></i>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="side-menu">
+            <ul class="side-menu__list">
+                <li><label>Dashboard<span class="side-menu__icon">
+                            <i class="mdi mdi-chevron-down dropdown__icon"></i>
+                            <i class="mdi mdi-monitor-dashboard"></i></label></li>
+                <li class="dropdown"><label for="menu1">Menu<span class="side-menu__icon">
+                            <i class="mdi mdi-chevron-down dropdown__icon"></i>
+                            <i class="mdi mdi-meteor"></i></label>
+                    <input id="menu1" type="checkbox">
+                    </span>
+                    <ul class="dropdown__menu">
+                        <li><label>Menu 1</label></li>
+                        <li><label>Menu 2</label></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><label for="menu2">Menu<span class="side-menu__icon">
+                            <i class="mdi mdi-chevron-down dropdown__icon"></i>
+                            <i class="mdi mdi-meteor"></i></label>
+                    </span>
+                    <input type="checkbox" id="menu2">
+                    <ul class="dropdown__menu">
+                        <li><label>Menu 1</label></li>
+                        <li><label>Menu 2</alabel>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="card">
+                <h4 class="card__title">This is table example</h4>
+                <table>
+                    <thead>
+                        <th>asdf</th>
+                        <th>asdf</th>
+                        <th>safsdfasdf</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card">
+                <h4 class="card__title">This is form example</h4>
+                <form action="#" class="form">
+                    <div class="form__group">
+                        <label for="">Name</label>
+                        <input type="text" placeholder="Full Name">
+                    </div>
+                    <div class="form__group">
+                        <label for="">Email</label>
+                        <input type="text" placeholder="Email">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

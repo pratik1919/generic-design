@@ -1,0 +1,83 @@
+.side-menu {
+  background: $white;
+  flex-basis: 260px;
+  font-family: $head-font;
+  padding: 30px 0;
+  &.closed {
+    flex-basis: 0;
+    overflow: hidden;
+  }
+
+  &__list {
+    font-size: 14px;
+    list-style: none;
+    li {
+      padding: 0 36px;
+      height: auto;
+      &:hover {
+        background: darken($color: $white, $amount: 2);
+      }
+      label {
+        padding: 18px 0;
+        color: $menu-color;
+        display: block;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__icon {
+    float: right;
+    font-size: 18px;
+  }
+}
+
+.dropdown {
+  input {
+    display: none;
+    &:checked {
+      + .dropdown__menu {
+        max-height: 100%;
+      }
+    }
+  }
+  &__icon {
+    display: none;
+  }
+
+  .dropdown__icon {
+    display: inline;
+  }
+
+  &__menu {
+    overflow: hidden;
+    list-style: none;
+    max-height: 0;
+    transition: max-height 0.25s ease-in-out;
+    li {
+      padding: 0;
+      label {
+        padding: 12px 32px;
+        text-decoration: none;
+        position: relative;
+        font-weight: 100;
+        color: lighten($color: $menu-color, $amount: 30);
+        &:before {
+          content: "\F054";
+          font-family: "Material Design Icons";
+          display: block;
+          position: absolute;
+          left: 0px;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          color: lighten($color: $menu-color, $amount: 30);
+          font-size: 0.75rem;
+        }
+        &:hover {
+          color: $menu-color;
+        }
+      }
+    }
+  }
+}
